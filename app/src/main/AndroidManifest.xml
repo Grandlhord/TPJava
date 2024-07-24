@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TPJava"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".BankTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpSelectedCard"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpNoCard"
+            android:exported="false" />
+        <activity
+            android:name=".SelectCard"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionConfirmation"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpSelectedWallet"
+            android:exported="false" />
+        <activity
+            android:name=".SelectWallet"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpNoWallet"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpAccount"
+            android:exported="false" />
+        <activity
+            android:name=".TransactionOTP"
+            android:exported="false" />
+        <activity
+            android:name=".transactionSummary"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BottomNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".P2PTransactionDetail"
+            android:exported="false" />
+        <activity
+            android:name=".P2PTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other Activities -->
+        <activity
+            android:name=".OTPVerification"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneRegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PinSetUp"
+            android:exported="true" />
+        <activity
+            android:name=".accountRegistration"
+            android:exported="true" />
+    </application>
+
+</manifest>

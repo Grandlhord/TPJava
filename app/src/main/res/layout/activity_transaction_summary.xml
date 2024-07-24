@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/modal_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="00dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/amountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@drawable/modal_header">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Transaction Summary"
+                android:textAppearance="@style/modalText"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/transaction_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are sending an amount of"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GHC 2500.00"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+           android:textColor="@color/gradTextStartColor"
+            android:fontFamily="@font/ibmplexsansbold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textAppearance="@style/textfields" />
+
+            <TextView
+                android:id="@+id/transaction_recipient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audrey Sam"
+                android:textAppearance="@style/textfieldsContent"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With account number"
+                android:paddingTop="16dp"
+                android:textAppearance="@style/textfields"  />
+
+            <TextView
+                android:id="@+id/transaction_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567890"
+                android:textAppearance="@style/textfieldsContent"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With account network"
+                android:paddingTop="16dp"
+                android:textAppearance="@style/textfields"  />
+
+            <TextView
+                android:id="@+id/transaction_account_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDP"
+                android:textAppearance="@style/textfieldsContent"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:paddingTop="16dp"
+                android:textAppearance="@style/textfields" />
+
+            <TextView
+                android:id="@+id/transaction_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For fees"
+                android:textAppearance="@style/textfieldsContent"
+                android:paddingTop="8dp" />
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm transaction with OTP"
+                android:textAppearance="@style/buttons"
+                android:drawableEnd="@drawable/ic_login"
+                android:layout_marginTop="50dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/modal_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:padding="00dp">
+
+        <RelativeLayout
+            android:id="@+id/amountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@drawable/modal_header">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:gravity="center"
+                android:text="Add a Wallet"
+                android:textAppearance="@style/modalText"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="@style/subtitles"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter wallet name"
+        android:textAppearance="@style/textfields"
+        android:inputType="number"
+        android:paddingBottom="8dp"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mobileNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Network"
+        android:textAppearance="@style/subtitles"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/selectNetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="10dp"
+        android:textAppearance="@style/textfields"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textAppearance="@style/subtitles"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+233 Enter phone number"
+        android:textAppearance="@style/textfields"
+        android:inputType="number"
+        android:paddingBottom="8dp"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/momoNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/allow_wallet"
+            android:textColor="@color/secondary"
+            android:textAppearance="@style/smallScreenText" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save wallet"
+        android:layout_gravity="center"
+        android:textAppearance="@style/buttons"
+        android:drawableEnd="@drawable/wallet"
+        android:layout_marginTop="50dp"
+        android:gravity="center" />
+</LinearLayout>
+
+
+    </LinearLayout>

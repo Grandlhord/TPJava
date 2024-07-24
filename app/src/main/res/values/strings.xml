@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">TPJava</string>
+    <string name="log_in">Log In</string>
+    <string name="password_label">Enter your password</string>
+    <string name="username_label">Enter your username</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? <font color='#6801CB'>Sign up</font> </string>
+    <string name="phone_number_page">Phone Number</string>
+    <string name="phone_number_page_subtitle">Enter your phone number to receive a One-Time Password</string>
+    <string name="phone_number_label">+233 Enter your phone number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="otp_page">OTP</string>
+    <string name="otp_button">Verify OTP</string>
+    <string name="no_otp_received">Did not receive OTP?  <font color='#6801CB'>Retry</font> </string>
+    <string name="resend_otp">Resend OTP></string>
+    <string name="account_registration_page">Account Registration</string>
+    <string name="account_registration_page_subtitle">Setup your account with the following information</string>
+    <string name="name_label">Enter your full name</string>
+    <string name="email_address_label">Enter your email-address</string>
+    <string name="mobile_money_number"><font color='#6801CB'>Mobile number is same as mobile money number</font></string>
+    <string name="next_button_text">Next</string>
+    <string name="pin_setup_page">Pin Setup</string>
+    <string name="pin_setup_page_subtitle">Setup your pin for your transcaction approvals</string>
+    <string name="pin_label">Enter your pin</string>
+    <string name="confirm_pin">Re-enter your pin</string>
+    <string name="pin_reqs1">• Pin should not be less than 6 characters</string>
+    <string name="pin_reqs2">• Pin should not include special characters like $,%, &amp; and *</string>
+    <string name="set_pin_button">Set Pin></string>
+    <string name="pin_set_success">YOur pin has been successfully created</string>
+    <string name="kyc_page">KYC Setup</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_history">History</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="notification_title">Notifications</string>
+    <string name="Profile_title">Profile</string>
+    <string name="loans_title">Loans</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_loans">Loans</string>
+    <string name="title_profile">Profile</string>
+    <string name="transaction_otp">Transaction OTP</string>
+    <string name="top_up_page">Top-Up</string>
+    <string name="select_wallet_page">Select Wallet</string>
+    <string name="bank_transfer_page">Bank Transfer</string>
+    <string name="select_card_page">Select Card</string>
+    <string name="no_wallet_title">You have not added any wallets yet. Your wallets will appear here when you do</string>
+    <string name="no_card_title">You have not added any card yet. Your wallets will appear here when you do</string>
+    <string name="allow_wallet">Allow wallet for future withdrawals</string>
+    <string name="allow_card">Allow card for future withdrawals</string>
+</resources>

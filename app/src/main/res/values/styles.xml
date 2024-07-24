@@ -1,0 +1,135 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget.Theme.TPJava.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="Widget.Theme.TPJava.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="appbar">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansbold</item>
+        <item name="android:textColor">#18181B</item>
+    </style>
+
+    <style name="subtitles">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+    </style>
+
+    <style name="textfields">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+        <item name="android:textColor">#687078</item>
+    </style>
+
+    <style name="transactionSubtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+        <item name="android:textColor">#687078</item>
+    </style>
+
+    <style name="textfieldsContent">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#687078</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="smallScreenText">
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+        <item name="android:textColor">#687078</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dashboardUsername">
+        <item name="android:fontFamily">@font/ibmplexsansbold</item>
+        <item name="android:textColor">#6801cb</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.Theme.TPJava.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+
+    <style name="sectionDividers">
+        <item name="android:fontFamily">@font/ibmplexsanssemibold</item>
+        <item name="android:textColor">#6801cb</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="notificationHeaders">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#1e1e1e</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="notificationAmount">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#1e1e1e</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="notificationStatus">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#30a806</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="notificationDate">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#181818</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="notificationData">
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+        <item name="android:textColor">#687078</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dashboardUsername.">
+        <item name="android:fontFamily">@font/ibmplexsansbold</item>
+        <item name="android:textColor">#6801cb</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="changePin">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#6801cb</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="modalText">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="pageTitle">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#18181b</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="bankTransfersSteps">
+        <item name="android:fontFamily">@font/ibmplexsansregular</item>
+        <item name="android:textColor">#687078</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="reference_code">
+        <item name="android:fontFamily">@font/ibmplexsansmedium</item>
+        <item name="android:textColor">#687078</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

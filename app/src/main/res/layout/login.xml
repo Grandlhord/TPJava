@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/bdp_logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/log_in"
+                android:textAppearance="@style/appbar" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="@string/username_label"
+            android:textAppearance="@style/textfields"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:drawableEnd="@drawable/password_visible"
+            android:ems="30"
+            android:hint="@string/password_label"
+            android:textAppearance="@style/textfields"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="119dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/buttons"
+            android:drawableEnd="@drawable/ic_login"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/forgot_password" />
+
+        <TextView
+            android:id="@+id/dontHaveAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="90dp"
+            android:autoLink="all"
+            android:text="@string/dont_have_account" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

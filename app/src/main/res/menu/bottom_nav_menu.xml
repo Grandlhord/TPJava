@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet"
+        android:title="@string/title_wallet" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history"
+        android:title="@string/title_history" />
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/baseline_notifications_none_24"
+        android:title="@string/title_notification" />
+
+    <item
+        android:id="@+id/navigation_loans"
+        android:icon="@drawable/loans"
+        android:title="@string/title_loans" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/user"
+        android:title="@string/title_profile" />
+
+</menu>

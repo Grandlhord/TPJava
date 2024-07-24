@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".P2PTransactionDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back" />
+
+        <RelativeLayout
+            android:id="@+id/amountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/p2pamountcontainer">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Enter Amount"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter account number"
+                android:textAppearance="@style/textfields"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:layout_marginTop="60dp"/>
+        </RelativeLayout>
+
+
+
+    <!-- Account Number input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Number"
+        android:textAppearance="@style/notificationHeaders"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1234567890"
+        android:inputType="number"
+       android:textAppearance="@style/textfields"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Account Network input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Network"
+        android:textAppearance="@style/notificationHeaders"
+         android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BDP"
+        android:textAppearance="@style/textfields"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Account Name input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Name*"
+        android:textAppearance="@style/notificationHeaders"
+       android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Audrey Sam"
+        android:textAppearance="@style/textfields"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Note/Description input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note/Description"
+        android:textAppearance="@style/notificationHeaders"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a note or description"
+        android:textAppearance="@style/textfields"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Continue button -->
+    <Button
+        android:id="@+id/btnP2PContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/ic_login"
+        android:textAppearance="@style/buttons"
+        android:text="Continue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

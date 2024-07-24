@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinSetUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/bdp_logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/pin_setup_page"
+                android:textAppearance="@style/appbar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone_number_page"
+            android:layout_width="289dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:rotationX="-1"
+            android:textAppearance="@style/subtitles"
+            android:text="@string/pin_setup_page_subtitle" />
+
+
+        <EditText
+            android:id="@+id/editPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawableEnd="@drawable/password_visible"
+            android:ems="10"
+            android:textAppearance="@style/textfields"
+            android:hint="@string/pin_label"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/editPinConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableEnd="@drawable/password_visible"
+            android:ems="10"
+            android:textAppearance="@style/textfields"
+            android:hint="@string/confirm_pin"
+            android:inputType="numberPassword" />
+
+            <TextView
+                android:id="@+id/pin_reqs3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/pin_reqs1"
+                android:textAppearance="@style/smallScreenText" />
+
+            <TextView
+            android:id="@+id/pin_reqs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/pin_reqs1"
+            android:textAppearance="@style/smallScreenText" />
+
+            <TextView
+            android:id="@+id/pin_reqs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/pin_reqs1"
+            android:textAppearance="@style/smallScreenText" />
+
+
+        <Button
+            android:id="@+id/btnPinSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="124dp"
+            android:drawableEnd="@drawable/ic_login"
+            android:textAppearance="@style/buttons"
+            android:text="@string/next_button_text" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

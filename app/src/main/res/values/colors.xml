@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="primary">#CC0066</color>
+    <color name="secondary">#6801CB</color>
+    <color name="textColor">#687078</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="gradTextStartColor">#CA0268</color>
+    <color name="gradTextEndColor">#6801CB</color>
+
+</resources>
