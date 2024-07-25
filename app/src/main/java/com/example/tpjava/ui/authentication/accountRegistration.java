@@ -1,4 +1,4 @@
-package com.example.tpjava;
+package com.example.tpjava.ui.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,30 +12,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class P2PTransfer extends AppCompatActivity {
+import com.example.tpjava.R;
 
-    Button btnP2pTransfer;
+
+public class accountRegistration extends AppCompatActivity {
+
+    Button btnRegisterButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_p2_ptransfer);
+        setContentView(R.layout.activity_account_registration);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        btnP2pTransfer = findViewById(R.id.btnP2PContinue);
-
-        btnP2pTransfer.setOnClickListener(new View.OnClickListener() {
+        btnRegisterButton = findViewById(R.id.btnRegisterButton);
+        btnRegisterButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // TODO: Implement P2P transfer logic
-                Toast.makeText(P2PTransfer.this, "clicked", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(P2PTransfer.this, P2PTransactionDetail.class));
-
+                Toast.makeText(accountRegistration.this, "Account created", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(accountRegistration.this, PinSetUp.class));
+                // TODO: Implement registration logic here
             }
         });
     }

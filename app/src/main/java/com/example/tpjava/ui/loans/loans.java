@@ -1,4 +1,4 @@
-package com.example.tpjava;
+package com.example.tpjava.ui.loans;
 
 import android.os.Bundle;
 
@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.tpjava.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,4 +1,4 @@
-package com.example.tpjava;
+package com.example.tpjava.ui.authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.tpjava.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

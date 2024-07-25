@@ -7,26 +7,26 @@
 
     <fragment
         android:id="@+id/navigation_wallet"
-        android:name="com.example.tpjava.wallet"
+        android:name="com.example.tpjava.ui.transaction.wallet"
         tools:layout="@layout/fragment_wallet" />
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.example.tpjava.history"
+        android:name="com.example.tpjava.ui.history.history"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/navigation_notification"
-        android:name="com.example.tpjava.notification"
+        android:name="com.example.tpjava.ui.notification.notification"
         tools:layout="@layout/fragment_notification" />
 
     <fragment
         android:id="@+id/navigation_loans"
-        android:name="com.example.tpjava.loans"
+        android:name="com.example.tpjava.ui.loans.loans"
         tools:layout="@layout/fragment_loans" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.tpjava.profile"
+        android:name="com.example.tpjava.ui.profile.profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

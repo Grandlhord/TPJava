@@ -1,10 +1,9 @@
-package com.example.tpjava;
+package com.example.tpjava.ui.top_up;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,29 +11,28 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.tpjava.R;
+import com.example.tpjava.ui.transaction.TransactionConfirmation;
 
-public class accountRegistration extends AppCompatActivity {
-
-    Button btnRegisterButton;
+public class TopUpSelectedWallet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_account_registration);
+        setContentView(R.layout.activity_top_up_selected_wallet);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        btnRegisterButton = findViewById(R.id.btnRegisterButton);
-        btnRegisterButton.setOnClickListener(new View.OnClickListener(){
+        Button selectedWallets =  findViewById(R.id.btnTopUpContinue);
+        selectedWallets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(accountRegistration.this, "Account created", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(accountRegistration.this,PinSetUp.class));
-                // TODO: Implement registration logic here
+                // TODO: Implement top-up logic
+                startActivity(new Intent(TopUpSelectedWallet.this, TransactionConfirmation.class));
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.example.tpjava;
+package com.example.tpjava.ui.top_up;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.tpjava.R;
 
 public class TopUpNoWallet extends AppCompatActivity {
 

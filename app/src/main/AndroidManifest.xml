@@ -15,37 +15,37 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".BankTransfer"
+            android:name=".ui.top_up.BankTransfer"
             android:exported="false" />
         <activity
-            android:name=".TopUpSelectedCard"
+            android:name=".ui.top_up.TopUpSelectedCard"
             android:exported="false" />
         <activity
-            android:name=".TopUpNoCard"
+            android:name=".ui.top_up.TopUpNoCard"
             android:exported="false" />
         <activity
-            android:name=".SelectCard"
+            android:name=".ui.top_up.SelectCard"
             android:exported="false" />
         <activity
-            android:name=".TransactionConfirmation"
+            android:name=".ui.transaction.TransactionConfirmation"
             android:exported="false" />
         <activity
-            android:name=".TopUpSelectedWallet"
+            android:name=".ui.top_up.TopUpSelectedWallet"
             android:exported="false" />
         <activity
-            android:name=".SelectWallet"
+            android:name=".ui.top_up.SelectWallet"
             android:exported="false" />
         <activity
-            android:name=".TopUpNoWallet"
+            android:name=".ui.top_up.TopUpNoWallet"
             android:exported="false" />
         <activity
-            android:name=".TopUpAccount"
+            android:name=".ui.top_up.TopUpAccount"
             android:exported="false" />
         <activity
-            android:name=".TransactionOTP"
+            android:name=".ui.transaction.TransactionOTP"
             android:exported="false" />
         <activity
-            android:name=".transactionSummary"
+            android:name=".ui.transaction.transactionSummary"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -61,13 +61,13 @@
             android:exported="false"
             android:label="@string/title_activity_bottom_navigation" />
         <activity
-            android:name=".P2PTransactionDetail"
+            android:name=".ui.transaction.P2PTransactionDetail"
             android:exported="false" />
         <activity
-            android:name=".P2PTransfer"
+            android:name=".ui.transaction.P2PTransfer"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".ui.authentication.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -76,16 +76,16 @@
             </intent-filter>
         </activity> <!-- Other Activities -->
         <activity
-            android:name=".OTPVerification"
+            android:name=".ui.authentication.OTPVerification"
             android:exported="true" />
         <activity
-            android:name=".PhoneRegistrationActivity"
+            android:name=".ui.authentication.PhoneRegistrationActivity"
             android:exported="true" />
         <activity
-            android:name=".PinSetUp"
+            android:name=".ui.authentication.PinSetUp"
             android:exported="true" />
         <activity
-            android:name=".accountRegistration"
+            android:name=".ui.authentication.accountRegistration"
             android:exported="true" />
     </application>
 
