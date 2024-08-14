@@ -48,34 +48,35 @@
 
 
         <EditText
-            android:id="@+id/editFullName"
+            android:id="@+id/editPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:ems="10"
+            android:enabled="true"
             android:textAppearance="@style/textfields"
-            android:hint="@string/name_label"
+            android:hint="@string/phone_number_label"
             android:inputType="phone" />
 
         <EditText
-            android:id="@+id/editEmailAddress"
+            android:id="@+id/editFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:textAppearance="@style/textfields"
-            android:hint="@string/email_address_label"
+            android:hint="@string/name_label"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/editPhoneNumber"
+            android:id="@+id/editGhanaNumber"
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:textAppearance="@style/textfields"
-            android:hint="@string/phone_number_label"
-            android:inputType="phone" />
+            android:hint="Enter Ghana Card Number"
+            android:inputType="text" />
 
         <LinearLayout
             android:layout_width="match_parent"

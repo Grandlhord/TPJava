@@ -37,17 +37,17 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editPhoneNumber"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:ems="10"
             android:hint="@string/username_label"
             android:textAppearance="@style/textfields"
-            android:inputType="phone" />
+            android:inputType="text" />
 
         <EditText
-            android:id="@+id/editPassword"
+            android:id="@+id/editPin"
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:layout_marginTop="20dp"
