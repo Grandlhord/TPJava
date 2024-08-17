@@ -17,7 +17,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.tpjava.MainActivity;
 import com.example.tpjava.R;
 import com.example.tpjava.storageHelper.StorageHelper;
 
@@ -73,16 +72,15 @@ public class PinSetUp extends AppCompatActivity {
         String phoneNumber = storageHelper.getString("phoneNumber", " ");
         String otpCode = storageHelper.getString("OtpCode", " ");
 
-        Map<String, String> setPin = new HashMap<>();
-        setPin.put("phoneNumber", phoneNumber);
-        setPin.put("otp", otpCode);
-        setPin.put("pin", pin);
-        setPin.put("newPin", confirmPin);
+        if (Objects.equals(pin, confirmPin)) {
+            Map<String, String> setPin = new HashMap<>();
+            setPin.put("phoneNumber", phoneNumber);
+            setPin.put("otp", otpCode);
+            setPin.put("pin", pin);
+            setPin.put("newPin", confirmPin);
 
-        JsonObjectRequest request = null;
-        try {
-            if (Objects.equals(pin, confirmPin)) {
-                request = new JsonObjectRequest(Request.Method.PUT, url, new JSONObject(setPin), response -> {
+            try {
+                JsonObjectRequest request = new JsonObjectRequest(Request.Method.PUT, url, new JSONObject(setPin), response -> {
                     try {
                         boolean success = response.getBoolean("success");
                         String message = response.getString("message");
@@ -100,12 +98,13 @@ public class PinSetUp extends AppCompatActivity {
                     Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
                     // Handle error
                 });
-            } else {
-                Toast.makeText(this, "Pins do not match", Toast.LENGTH_SHORT).show();
+
+                queue.add(request);
+            } catch (Exception e) {
+                Toast.makeText(this, "Something happened", Toast.LENGTH_SHORT).show();
             }
-        } catch (Exception e) {
-            Toast.makeText(this, "Something happened", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Pins do not match", Toast.LENGTH_SHORT).show();
         }
-        queue.add(request);
     }
 }

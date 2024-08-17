@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.TPJava" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <item name="colorPrimary">@color/secondary</item>
         <item name="colorPrimaryVariant">@color/secondary</item>
         <item name="colorOnPrimary">@color/black</item>

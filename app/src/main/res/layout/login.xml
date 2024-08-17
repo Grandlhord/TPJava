@@ -36,26 +36,39 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/editName"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:ems="10"
-            android:hint="@string/username_label"
-            android:textAppearance="@style/textfields"
-            android:inputType="text" />
+            app:passwordToggleEnabled="false">
 
-        <EditText
-            android:id="@+id/editPin"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:hint="@string/username_label"
+                android:background="@color/white"
+                android:textAppearance="@style/textfields"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
             android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginTop="20dp"
-            android:drawableEnd="@drawable/password_visible"
-            android:ems="30"
-            android:hint="@string/password_label"
-            android:textAppearance="@style/textfields"
-            android:inputType="textPassword" />
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPin"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/password_label"
+                android:background="@color/white"
+                android:textAppearance="@style/textfields"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/loginButton"

@@ -38,7 +38,7 @@
 
     <com.chaos.view.PinView
         android:id="@+id/otpCode"
-        app:itemCount="4"
+        app:itemCount="6"
         android:gravity="center"
         android:layout_marginTop="90dp"
         android:layout_width="wrap_content"

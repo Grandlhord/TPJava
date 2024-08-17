@@ -1,6 +1,5 @@
 package com.example.tpjava.ui.authentication;
 
-import static androidx.core.content.ContextCompat.startActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,10 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.tpjava.MainActivity;
 import com.example.tpjava.R;
 import com.example.tpjava.storageHelper.StorageHelper;
 
@@ -115,7 +112,7 @@ public class accountRegistration extends AppCompatActivity {
                                 // Process the data as needed
                             }
                             Toast.makeText(accountRegistration.this, message, Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(accountRegistration.this, Login.class));
+                            startActivity(new Intent(accountRegistration.this, KYCSetup.class));
                         } else {
                             Toast.makeText(accountRegistration.this, "Failed to verify OTP: " + message, Toast.LENGTH_SHORT).show();
                         }

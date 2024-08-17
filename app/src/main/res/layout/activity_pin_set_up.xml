@@ -45,28 +45,39 @@
             android:textAppearance="@style/subtitles"
             android:text="@string/pin_setup_page_subtitle" />
 
-
-        <EditText
-            android:id="@+id/editPin"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPassword1Layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:drawableEnd="@drawable/password_visible"
-            android:ems="10"
-            android:textAppearance="@style/textfields"
-            android:hint="@string/pin_label"
-            android:inputType="numberPassword" />
+            app:passwordToggleEnabled="true">
 
-        <EditText
-            android:id="@+id/editPinConfirm"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="@string/password_label"
+                android:background="@color/white"
+                android:textAppearance="@style/textfields"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPassword2Layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:drawableEnd="@drawable/password_visible"
-            android:ems="10"
-            android:textAppearance="@style/textfields"
-            android:hint="@string/confirm_pin"
-            android:inputType="numberPassword" />
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPinConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/confirm_pin"
+                android:background="@color/white"
+                android:textAppearance="@style/textfields"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/pin_reqs3"

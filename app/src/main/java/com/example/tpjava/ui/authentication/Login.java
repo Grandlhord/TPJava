@@ -1,9 +1,7 @@
 package com.example.tpjava.ui.authentication;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,7 +17,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.tpjava.MainActivity;
+import com.example.tpjava.HomeScreen;
 import com.example.tpjava.R;
 import com.example.tpjava.storageHelper.StorageHelper;
 
@@ -60,7 +58,9 @@ public class Login extends AppCompatActivity {
             startActivity(new Intent(Login.this, PhoneRegistrationActivity.class));
         });
 
-        loginButton.setOnClickListener(v -> login(name.getText().toString(), pin.getText().toString()));
+        loginButton.setOnClickListener(view -> {
+            login(name.getText().toString(), pin.getText().toString());
+        });
     }
 
     public void login(String phoneNumber, String pin) {
@@ -107,7 +107,7 @@ public class Login extends AppCompatActivity {
 
                         }
                         Toast.makeText(Login.this, message, Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(Login.this, MainActivity.class));
+                        startActivity(new Intent(Login.this, HomeScreen.class));
                     } else if (response.has("error")) {
                         String errorMessage = response.getString("message");
                         JSONObject errors = response.getJSONObject("error");
